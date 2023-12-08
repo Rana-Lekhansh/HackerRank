@@ -13,11 +13,11 @@ char* readline() {
     while (true) {
         printf("Data - %s\n", data);
         char* cursor = data + data_length;
-        char* line = fgets(cursor, alloc_length - data_length, stdin);
+        fgets(cursor, alloc_length - data_length, stdin);
 
-        printf("Data - %sCursor - %sline - %s\n", data,cursor,line);
+        printf("Data - %sCursor - %s\n", data,cursor);
 
-        if (!line) {
+        if (!cursor) {
             break;
         }
 
@@ -125,8 +125,9 @@ char *print(){
 
 
 int main(){
-
-   printf("\n%s",rtrim(print()));
+     
+     readline();
+  // printf("\n%s",rtrim(print()));
    //printf("\nEntered text - %s", print());
     return 0;
 }
