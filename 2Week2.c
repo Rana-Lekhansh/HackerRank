@@ -57,8 +57,6 @@ int main()
     size_t n = sizeof(array) / sizeof(array[0]);
     print_array(n, array);
     zigzag(n, array);
-    //print_array(n, array);
-   // reverse_array(0,n-1,array);
     print_array(n,array);
     
     return 0;
