@@ -17,6 +17,9 @@ if(diff1<=diff2){
 else if(diff1==0||diff2==0)  {
     return 0;
 }
+else if(diff1==1||diff2==1)  {
+    return 1;
+}
 else{
     return (diff2+1)/2;
 }
