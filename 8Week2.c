@@ -86,20 +86,17 @@ char* gridChallenge(int numStrings, char** array) {
         for (int j = 1; j < numStrings; j++)
         {   
 
-            printf("i - %d\t\tj - %d\t\tarr - %c\t\tnextarr - %c\t\tflag - %d\n", i,j,array[j - 1][i], array[j][i], flag );
             if(array[j - 1][i]>array[j][i]){
                 flag++;
                 break;}
 
         }
-        printf("\n");
         if (flag == 1)
         {   
             result = "NO";
             break;
         }
     }
-    printf("flag - %d", flag);
 
    return result;
 
